@@ -1,0 +1,47 @@
+/* media quaries for picture */
+img{
+    width: 100%;
+    height: auto;
+}
+    
+/* picture style */
+#card {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    width: 25px 25px 25px 25px 25px;
+    gap: 25px;
+    transition: 0.3s;
+}
+
+/* picture background style */
+.box {
+    padding: 10px;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgb(220, 217, 221);
+}
+
+/* For Small Screen */
+@media (min-width: 300px) {
+    #card {
+        display: grid;
+        min-width: 100%;
+    }
+}
+
+/* for medium screen */
+@media (min-width: 600px) {
+    #card {
+        display: grid;
+        min-width: 50%;
+    }
+}
+
+/* For Desktop */
+@media (min-width: 960px) {
+    #card {
+        display: flex;
+        min-width: 20%;
+    }
+}
